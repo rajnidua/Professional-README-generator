@@ -63,9 +63,14 @@ var myAnswer;
     const licenseData = renderLicenseLink(mylicense);
     const licenseIcon = renderLicenseBadge(mylicense);
     return `## License and Copyright
-    -${licenseIcon}
-    -(&copy;) ${myName}
-    -Licensed under [${mylicense}](./license)`
+    
+    ${licenseIcon}
+    
+    
+    (&copy;) ${myName}
+    
+    
+    Licensed under [${mylicense}](./license)`
      
    }
  }
@@ -78,17 +83,19 @@ const myGenerateMarkdown=(data) =>{
   // console.log("Hi, I am license icon "+licenseIcon);
 
   const renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`);
-   return `# ${data.title}
+   return `# &mdash; ${data.title}
+
+
   
 
 ## Description
-${data.description}
+${data.description}&mdash;
 
 ## Table of contents
 
 
 ## Installation
-${data.installation}
+&mdash;${data.installation}&mdash;
 
 ## Licence
 ${renderLicense}
