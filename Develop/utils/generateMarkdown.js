@@ -63,9 +63,9 @@ var myAnswer;
     const licenseData = renderLicenseLink(mylicense);
     const licenseIcon = renderLicenseBadge(mylicense);
     return `## License and Copyright
-    ${licenseIcon}
-    &copy; ${myName}
-    Licensed under [${mylicense}][LICENSE](./license)`
+    -${licenseIcon}
+    -(&copy;) ${myName}
+    -Licensed under [${mylicense}][LICENSE](./license)`
      
    }
  }
