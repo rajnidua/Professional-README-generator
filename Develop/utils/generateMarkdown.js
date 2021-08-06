@@ -9,13 +9,18 @@ var myAnswer;
   //  console.log("the value of licence is "+data.license);
   switch (mylicense){
     case 'The MIT License' :
-     return  "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
-      break;
+     //return  "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+     return  "License: MIT"; 
+     break;
       case 'The Apache License':
-        return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]"
+        //return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]"
+        
+        return  "License: Apache"; 
         break;
         case 'The GPL License':
-          return "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)]"
+          //return "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)]"
+          
+          return  "License: GPL"; 
           break;
          
           case 'No Lisence':
