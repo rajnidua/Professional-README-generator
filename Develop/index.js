@@ -79,7 +79,7 @@ const init = () => {
   console.log("i am inside init");
    promptUser()
   .then((answers)=>myGenerateMarkdown(answers))
-  .then((myAnswer) => writeFileAsync('README.md', myAnswer))
+  .then((myAnswer) => writeFileAsync('../README.md', myAnswer))
   
   .then (()=>console.log("This is a success")) 
   .catch((err)=>console.error(err)) 

@@ -9,7 +9,7 @@ var myAnswer;
   //  console.log("the value of licence is "+data.license);
   switch (mylicense){
     case 'The MIT License' :
-     return  "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+     return  "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
       break;
       case 'The Apache License':
         return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]"
@@ -49,7 +49,7 @@ var myAnswer;
   }
   console.log("the license data obtained is "+licenseData);
   // fs.writeFile('license',licenseData);
-  fs.writeFile('license', licenseData, (err) =>
+  fs.writeFile('../license', licenseData, (err) =>
   err ? console.error(err) : console.log('Success!')
  );
 
@@ -65,7 +65,7 @@ var myAnswer;
     return `## License and Copyright
     ${licenseIcon}
     &copy; ${myName}
-    Licensed under [${mylicense}](LICENSE)`
+    Licensed under [${mylicense}][LICENSE](./license)`
      
    }
  }
