@@ -82,7 +82,7 @@ const myGenerateMarkdown=(data) =>{
   
   // const renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`);
   
-  /* let mylicense = `${data.license}`;
+   let mylicense = `${data.license}`;
   var licenseIcon1 = "";
   if(mylicense!=='No Lisence'){
    licenseIcon1 = renderLicenseBadge(mylicense);
@@ -90,7 +90,7 @@ const myGenerateMarkdown=(data) =>{
   else{
      licenseIcon1 ="";
   }
-  console.log("the value of license icon1 is "+ licenseIcon1); */
+  console.log("the value of license icon1 is "+ licenseIcon1); 
   
   
 
