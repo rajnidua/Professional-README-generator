@@ -67,8 +67,11 @@ function renderLicenseSection(mylicense,myName,topData) {
   console.log("The data for my lisence is "+myLicenseData);
 return `${topData}`+`${myLicenseData}`;
   }
-else{
-  return `${topData}`
+else{const myLicenseData= `
+## License
+NO License`
+
+return `${topData}`+`${myLicenseData}`;
 }
 
     /* fs.appendFile('../README.md', myLicenseData,(err) =>
