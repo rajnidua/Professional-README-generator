@@ -46,6 +46,14 @@ const promptUser = () => {
         type: 'input',
         name: 'installation',
         message: 'Installations of your repository',
+        validate: installationInstruction => {
+          if (installationInstruction) {
+              return true;
+          } else {
+              console.log('You need to provide installation instructions to continue!');
+              return false;
+          }
+      }
       },
       {
         type: 'input',

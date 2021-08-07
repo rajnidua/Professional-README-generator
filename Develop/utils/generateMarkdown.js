@@ -100,17 +100,18 @@ const myGenerateMarkdown=(data) =>{
   // const renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`);
    const topData = `# &mdash; ${data.title}
 
-
-  
+## Table of contents
+- [Description](#Descrition)
+- [Installation](#Installation)
+- [License and Copyright](#License and Copyright)
 
 ## Description
 ${data.description}&mdash;
 
-## Table of contents
 
 
 ## Installation
-&mdash;${data.installation}&mdash;
+${data.installation}
 
 ## License and Copyright
 
