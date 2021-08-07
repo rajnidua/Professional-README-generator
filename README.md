@@ -1,46 +1,39 @@
 
-   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
-   # &mdash; bfdbfdbfgb
+  [![License: MIT](https://img.shields.io/badge/License-GNU-General-Public-yellow.svg)]
+  # &mdash; gnsfgns
 
-## Table of contents
-- [Description](#Descrition)
-- [Installation](#Installation)
-- [License](#License)
-- [Copyright](#Copyright)
+  ## Table of contents
+  - [Description](#Descrition)
+  - [Installation](#Installation)
+  - [License](#License)
 
-## Description
-fgbsgfnsn&mdash;
+  ## Description
+  nsfgnsfnsf&mdash;
 
+  ## Installation
+  gnfsgnsfgn
 
+  ## License
 
-## Installation
-fnsfnfsgnv czvbfgb
+  [![License: MIT](https://img.shields.io/badge/License-GNU-General-Public-yellow.svg)]
 
-## License
+  ## Copyright
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+  &copy; fbvfgnbfgn
 
-## Copyright
+  Licensed under [GNU-General-Public](./license)
 
-&copy; fdbdfb
-
-Licensed under [MIT](./license)
-
-## Testing:
-sgfnsfgnfgnf
+  ## Testing:
+  fgnfgnfn
 
   ## Additional Info:
-  - Github: [fgnfsgnsfgn](https://github.com/fgnfsgnsfgn)
-  - Email: gngnsfgn 
+  - Github: [ngfsfgnn](https://github.com/ngfsfgnn)
+  - Email: gfnfgnfgn
 
-
-
-     ## License and Copyright
+    ## License
     
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+    [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)]
+  
+    &copy; fbvfgnbfgn
     
-    
-    &copy; fdbdfb
-    
-    
-    Licensed under [MIT](./license)
+    Licensed under [GNU-General-Public](./license)
