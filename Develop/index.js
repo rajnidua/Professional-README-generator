@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-// const otherModule = require('./utils/generateMarkdown');
+
 const inquirer = require('inquirer');
 const fs= require('fs');
 var mystr;
@@ -9,9 +9,9 @@ var renderData;
  const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const myGenerateMarkdown = generateMarkdown.myGenerateMarkdown;
-const renderLicenseBadge= generateMarkdown.renderLicenseBadge;
+/* const renderLicenseBadge= generateMarkdown.renderLicenseBadge;
 const renderLicenseLink= generateMarkdown.renderLicenseLink;
-const renderLicenseSection= generateMarkdown.renderLicenseSection;
+const renderLicenseSection= generateMarkdown.renderLicenseSection; */
 
 var myData;
 var myDataLicense;
@@ -19,7 +19,7 @@ var myDataName;
  const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
-// const questions = [];
+
 const promptUser = () => {
     return inquirer.prompt([
       {
@@ -91,45 +91,13 @@ const promptUser = () => {
   
   
 
-// TODO: Create a function to write README file
-/* const writeOnFile= (output(answers)) => { fs.writeFile(`index.html`, myAnswer, (err) =>
- err ? console.log(err) : console.log('My message is Success!')
-);}  */ 
-/* const writeOnFile=(data)=>{
-  console.log("I am inside write on file "+data)
-  const writeMainFile=(myOneData)=>writeFileAsync('../README.md', data);
-console.log("here is data"+`${data.lisence}`);
-  const appendMainFile=()=>fs.appendFile('../README.md',renderLicenseSection(`${data.license}`,`${data.name}`));
 
- 
-}*/
-
-/* const assignValues=(answers)=>{
- myData = answers;
- myDataLicense = `${answers.license}`;
- myDataName = `${answers.name}`;
-}  */
-
-// TODO: Create a function to initialize app
-/* const init = () => {
-    console.log("i am inside init");
-     promptUser()
-    .then((answers)=>renderLicenseBadge(answers))
-    .then((myAnswer) => writeFileAsync('README.md', myAnswer))
-    .then (()=>console.log("This is a success")) 
-    .catch((err)=>console.error(err)) 
-};  */
 
 const init = () => {
   console.log("i am inside init");
    promptUser()
-    //.then((answers)=>assignValues(answers))
-  .then((answers)=>myGenerateMarkdown(answers))
+   .then((answers)=>myGenerateMarkdown(answers))
    .then((myAnswer) => writeFileAsync('./README.md', myAnswer))
-  // .then((answers)=>writeOnFile(answers))
-  
-  
-  
   .then (()=>console.log("This is a success")) 
   .catch((err)=>console.error(err)) 
 }; 
@@ -138,5 +106,4 @@ const init = () => {
  init();
  
 
-// ----------------------------------------------------
 

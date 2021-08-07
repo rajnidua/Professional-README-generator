@@ -115,18 +115,12 @@ NO License`
 return `${topData}`+`${myLicenseData}`;
 }
 
-    /* fs.appendFile('../README.md', myLicenseData,(err) =>
-    err ? console.error(err) : console.log('commit logged!')); */
-  
 }
 
 // TODO: Create a function to generate markdown for README
 const myGenerateMarkdown=(data) =>{ 
   console.log("Hi, I am data "+data)
-  
-  // const renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`);
-  
-   let mylicense = `${data.license}`;
+  let mylicense = `${data.license}`;
   var licenseIcon1 = "";
   if(mylicense!=='No Lisence'){
    licenseIcon1 = renderLicenseBadge(mylicense);
