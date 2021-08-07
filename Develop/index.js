@@ -36,11 +36,6 @@ const promptUser = () => {
         type: 'input',
         name: 'description',
         message: 'describe your repository?',
-      },{
-        type: 'input',
-        name: 'table of contents',
-        message: 'describe toc your repository?',
-      
       },
       {
         type: 'input',
@@ -62,7 +57,7 @@ const promptUser = () => {
       },
       {
         type: 'list',
-      message: 'What is the lisence name for your repository',
+      message: 'Choose a lisence for your repository, if you dont want any lisence, choode No License',
       name: 'license',
       choices: ['MIT', 'Apache', 'GNU-General-Public','No Lisence'],
       },
@@ -130,7 +125,7 @@ const init = () => {
    promptUser()
     //.then((answers)=>assignValues(answers))
   .then((answers)=>myGenerateMarkdown(answers))
-   .then((myAnswer) => writeFileAsync('../README.md', myAnswer))
+   .then((myAnswer) => writeFileAsync('./README.md', myAnswer))
   // .then((answers)=>writeOnFile(answers))
   
   

@@ -43,7 +43,7 @@ const renderLicenseBadge=(mylicense) => {
   }
 console.log("the license data obtained is "+licenseData);
   
-  fs.writeFile('../license', licenseData, (err) =>
+  fs.writeFile('./license', licenseData, (err) =>
     err ? console.error(err) : console.log('Success!')
   );
 }
@@ -57,8 +57,6 @@ function renderLicenseSection(mylicense,myName,topData) {
     const licenseIcon = renderLicenseBadge(mylicense);
     console.log("The lisence icon value is "+licenseIcon)
     const myLicenseData= `
-    ## License
-    
     ${licenseIcon}
   
     &copy; ${myName}
@@ -81,8 +79,21 @@ const myGenerateMarkdown=(data) =>{
   console.log("Hi, I am data "+data)
   
   // const renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`);
+  
+  let mylicense = `${data.license}`;
+  var licenseIcon1 = "";
+  if(mylicense!=='No Lisence'){
+   licenseIcon1 = renderLicenseBadge(mylicense);
+  }
+  else{
+     licenseIcon1 ="";
+  }
+  console.log("the value of license icon1 is "+ licenseIcon1);
+  
+  
+
   const topData = `
-  [![License: MIT](https://img.shields.io/badge/License-${data.license}-yellow.svg)]
+  ${licenseIcon1}
   # &mdash; ${data.title}
 
   ## Table of contents
@@ -96,22 +107,14 @@ const myGenerateMarkdown=(data) =>{
   ## Installation
   ${data.installation}
 
-  ## License
-
-  [![License: MIT](https://img.shields.io/badge/License-${data.license}-yellow.svg)]
-
-  ## Copyright
-
-  &copy; ${data.name}
-
-  Licensed under [${data.license}](./license)
+  ## Additional Info:
+  - Github: [${data.github}](https://github.com/${data.github})
+  - Email: ${data.email}
 
   ## Testing:
   ${data.testing}
 
-  ## Additional Info:
-  - Github: [${data.github}](https://github.com/${data.github})
-  - Email: ${data.email}
+  ## License
 `
 ; 
 return renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`,topData);
