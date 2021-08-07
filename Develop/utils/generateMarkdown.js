@@ -9,18 +9,18 @@ var myAnswer;
   //  console.log("the value of licence is "+data.license);
   switch (mylicense){
     case 'The MIT License' :
-     //return  "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
-     return  "License: MIT"; 
+     return  "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+     //return  "License: MIT"; 
      break;
       case 'The Apache License':
-        //return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]"
+        return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]"
         
-        return  "License: Apache"; 
+        //return  "License: Apache"; 
         break;
         case 'The GPL License':
-          //return "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)]"
+          return "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)]"
           
-          return  "License: GPL"; 
+          //return  "License: GPL"; 
           break;
          
           case 'No Lisence':
@@ -63,19 +63,27 @@ var myAnswer;
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
- function renderLicenseSection(mylicense,myName) {
+ function renderLicenseSection(mylicense,myName,topData) {
+
+  console.log("dsvsdvsdvds "+mylicense +myName);
    if(mylicense!== null){
     const licenseData = renderLicenseLink(mylicense);
     const licenseIcon = renderLicenseBadge(mylicense);
-    return `## License and Copyright
+     const myLicenseData= `## License and Copyright
     
     ${licenseIcon}
     
     
-    (&copy;) ${myName}
+    &copy; ${myName}
     
     
     Licensed under [${mylicense}](./license)`
+    console.log("The data for my lisence is "+myLicenseData);
+
+    return topData+myLicenseData;
+
+    /* fs.appendFile('../README.md', myLicenseData,(err) =>
+    err ? console.error(err) : console.log('commit logged!')); */
      
    }
  }
@@ -87,8 +95,8 @@ const myGenerateMarkdown=(data) =>{
   // const licenseIcon = renderLicenseBadge(data);
   // console.log("Hi, I am license icon "+licenseIcon);
 
-  const renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`);
-   return `# &mdash; ${data.title}
+  // const renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`);
+   const topData = `# &mdash; ${data.title}
 
 
   
@@ -103,11 +111,12 @@ ${data.description}&mdash;
 &mdash;${data.installation}&mdash;
 
 ## Licence
-${renderLicense}
+
+`
 
 
-
-`; 
+; 
+return renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`,topData);
  }
 
  module.exports = {
