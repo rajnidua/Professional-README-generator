@@ -8,16 +8,16 @@ var myAnswer;
  const renderLicenseBadge=(mylicense) => {
   //  console.log("the value of licence is "+data.license);
   switch (mylicense){
-    case 'The MIT License' :
+    case 'MIT' :
      return  "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
      //return  "License: MIT"; 
      break;
-      case 'The Apache License':
+      case 'Apache':
         return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]"
         
         //return  "License: Apache"; 
         break;
-        case 'The GPL License':
+        case 'GNU-General-Public':
           return "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)]"
           
           //return  "License: GPL"; 
@@ -69,6 +69,7 @@ var myAnswer;
    if(mylicense!== null){
     const licenseData = renderLicenseLink(mylicense);
     const licenseIcon = renderLicenseBadge(mylicense);
+    console.log("The lisence icon value is "+licenseIcon)
      const myLicenseData= `
      ## License and Copyright
     
