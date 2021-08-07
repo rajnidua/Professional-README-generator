@@ -80,7 +80,8 @@ var myAnswer;
     Licensed under [${mylicense}](./license)`
     console.log("The data for my lisence is "+myLicenseData);
 
-    return topData+myLicenseData;
+
+    return `${topData}`+`${myLicenseData}`;
 
     /* fs.appendFile('../README.md', myLicenseData,(err) =>
     err ? console.error(err) : console.log('commit logged!')); */
