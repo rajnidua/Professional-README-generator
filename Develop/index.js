@@ -59,7 +59,7 @@ const promptUser = () => {
         type: 'list',
       message: 'Choose a lisence for your repository, if you dont want any lisence, choode No License',
       name: 'license',
-      choices: ['MIT', 'Apache', 'GNU-General-Public','No Lisence'],
+      choices: ['MIT', 'Apache', 'GNU-General-Public','BSD 2-Clause License','No Lisence'],
       },
       {
         type: 'input',
