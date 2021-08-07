@@ -66,6 +66,25 @@ const promptUser = () => {
       name: 'license',
       choices: ['MIT', 'Apache', 'GNU-General-Public','No Lisence'],
       },
+      {
+        type: 'input',
+        name: 'github',
+        message: 'Enter your GitHub Username (Required)',
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log('Please enter your GitHub username!');
+                return false;
+            }
+        }
+    },
+    // Email Address
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Would you like to include your email?',
+    }
     ]);
   };
 

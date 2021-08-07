@@ -98,12 +98,15 @@ const myGenerateMarkdown=(data) =>{
   // console.log("Hi, I am license icon "+licenseIcon);
 
   // const renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`);
-   const topData = `# &mdash; ${data.title}
+   const topData = `
+   [![License: MIT](https://img.shields.io/badge/License-${data.license}-yellow.svg)]
+   # &mdash; ${data.title}
 
 ## Table of contents
 - [Description](#Descrition)
 - [Installation](#Installation)
-- [License and Copyright](#License and Copyright)
+- [License](#License)
+- [Copyright](#Copyright)
 
 ## Description
 ${data.description}&mdash;
@@ -113,13 +116,22 @@ ${data.description}&mdash;
 ## Installation
 ${data.installation}
 
-## License and Copyright
+## License
 
 [![License: MIT](https://img.shields.io/badge/License-${data.license}-yellow.svg)]
+
+## Copyright
 
 &copy; ${data.name}
 
 Licensed under [${data.license}](./license)
+
+## Testing:
+${data.testing}
+
+  ## Additional Info:
+  - Github: [${data.github}](https://github.com/${data.github})
+  - Email: ${data.email} 
 
 
 `
