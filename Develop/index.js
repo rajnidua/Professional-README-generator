@@ -78,6 +78,10 @@ const promptUser = () => {
                 return false;
             }
         }
+    },{
+      type: 'input',
+      name: 'testing',
+      message: 'testing information about your repository?',
     },
     // Email Address
     {
