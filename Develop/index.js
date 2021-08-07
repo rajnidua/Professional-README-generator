@@ -76,13 +76,13 @@ console.log("here is data"+`${data.lisence}`);
   const appendMainFile=()=>fs.appendFile('../README.md',renderLicenseSection(`${data.license}`,`${data.name}`));
 
  
-}
+}*/
 
-const assignValues=(answers)=>{
+/* const assignValues=(answers)=>{
  myData = answers;
- myDataLicense = `${data.license}`;
- myDataName = `${data.name}`;
-} */
+ myDataLicense = `${answers.license}`;
+ myDataName = `${answers.name}`;
+}  */
 
 // TODO: Create a function to initialize app
 /* const init = () => {
@@ -97,10 +97,11 @@ const assignValues=(answers)=>{
 const init = () => {
   console.log("i am inside init");
    promptUser()
-  //  .then((answers)=>assignValues(answers))
+    //.then((answers)=>assignValues(answers))
   .then((answers)=>myGenerateMarkdown(answers))
    .then((myAnswer) => writeFileAsync('../README.md', myAnswer))
   // .then((answers)=>writeOnFile(answers))
+  
   
   
   .then (()=>console.log("This is a success")) 

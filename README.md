@@ -1,22 +1,24 @@
-# &mdash; consectetur adipiscing elit
+# &mdash; condimentum odio eros eu ligula
 
 
   
 
 ## Description
-consectetur adipiscing elit&mdash;
+condimentum odio eros eu ligula&mdash;
 
 ## Table of contents
 
 
 ## Installation
-&mdash;consectetur adipiscing elit&mdash;
+&mdash;condimentum odio eros eu ligula&mdash;
 
 ## License and Copyright
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
-&copy; consectetur adipiscing elit
+&copy; condimentum odio eros eu ligula
+
+Licensed under [MIT](./license)
 
 
 
@@ -25,7 +27,7 @@ consectetur adipiscing elit&mdash;
     undefined
     
     
-    &copy; consectetur adipiscing elit
+    &copy; condimentum odio eros eu ligula
     
     
     Licensed under [MIT](./license)

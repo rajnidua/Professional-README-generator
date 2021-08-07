@@ -118,6 +118,8 @@ ${data.description}&mdash;
 
 &copy; ${data.name}
 
+Licensed under [${data.license}](./license)
+
 
 `
 
