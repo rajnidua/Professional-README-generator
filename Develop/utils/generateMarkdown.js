@@ -109,12 +109,14 @@ const myGenerateMarkdown=(data) =>{
   ## Installation
   ${data.installation}
 
+  ## Testing:
+  ${data.testing}
+
   ## Additional Info:
   - Github: [${data.github}](https://github.com/${data.github})
   - Email: ${data.email}
 
-  ## Testing:
-  ${data.testing}
+  
 
 `
 ; 
