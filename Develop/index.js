@@ -56,7 +56,7 @@ const promptUser = () => {
         type: 'list',
       message: 'What is the lisence name for your repository',
       name: 'license',
-      choices: ['The MIT License', 'The Apache License', 'The GPL License','No Lisence'],
+      choices: ['MIT', 'Apache', 'GNU-General-Public','No Lisence'],
       },
     ]);
   };

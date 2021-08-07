@@ -12,14 +12,20 @@ consectetur adipiscing elit&mdash;
 ## Installation
 &mdash;consectetur adipiscing elit&mdash;
 
-## Licence
-
 ## License and Copyright
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+
+&copy; consectetur adipiscing elit
+
+
+
+     ## License and Copyright
     
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+    undefined
     
     
     &copy; consectetur adipiscing elit
     
     
-    Licensed under [The MIT License](./license)
+    Licensed under [MIT](./license)

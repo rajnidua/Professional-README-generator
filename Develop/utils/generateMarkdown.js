@@ -37,13 +37,13 @@ var myAnswer;
  const renderLicenseLink=(license) =>{
 
   switch (license){
-    case 'The MIT License' :
+    case 'MIT' :
      licenseData = "MIT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat ultricies congue. Proin bibendum elit ut dolor malesuada commodo. Nulla luctus, lorem non dictum ornare, nibh felis gravida dui, vel condimentum odio eros eu ligula. Sed velit elit, suscipit in nisi cursus, dignissim convallis risus. Fusce scelerisque nulla quis justo pharetra viverra. ";
       break;
-      case 'The Apache License':
+      case 'Apache':
         licenseData= "Apache Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat ultricies congue. Proin bibendum elit ut dolor malesuada commodo. Nulla luctus, lorem non dictum ornare, nibh felis gravida dui, vel condimentum odio eros eu ligula. Sed velit elit, suscipit in nisi cursus, dignissim convallis risus. Fusce scelerisque nulla quis justo pharetra viverra. "
         break;
-        case 'The GPL License':
+        case 'GNU-General-Public':
           licenseData =  "GPL Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat ultricies congue. Proin bibendum elit ut dolor malesuada commodo. Nulla luctus, lorem non dictum ornare, nibh felis gravida dui, vel condimentum odio eros eu ligula. Sed velit elit, suscipit in nisi cursus, dignissim convallis risus. Fusce scelerisque nulla quis justo pharetra viverra. "
           break;
          
@@ -69,7 +69,8 @@ var myAnswer;
    if(mylicense!== null){
     const licenseData = renderLicenseLink(mylicense);
     const licenseIcon = renderLicenseBadge(mylicense);
-     const myLicenseData= `## License and Copyright
+     const myLicenseData= `
+     ## License and Copyright
     
     ${licenseIcon}
     
@@ -111,7 +112,12 @@ ${data.description}&mdash;
 ## Installation
 &mdash;${data.installation}&mdash;
 
-## Licence
+## License and Copyright
+
+[![License: MIT](https://img.shields.io/badge/License-${data.license}-yellow.svg)]
+
+&copy; ${data.name}
+
 
 `
 
