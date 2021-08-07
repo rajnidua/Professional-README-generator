@@ -1,6 +1,6 @@
 
-  ![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)
-  # &mdash; dvhdfhvgdv
+  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+  # &mdash; Professional-README-generator
 
   ## Table of contents
   - [Description](#Description)
@@ -10,25 +10,25 @@
   - [License](#License)
 
   ## Description
-  dvbhdfvhjdf&mdash;
+  It helps in generating a professional README file easily and quickly. It will create a new README file and a license file for the user.&mdash;
 
   ## Installation
-  dvbdfhvdfhj
+  NPM and Inquirer
 
   ## Testing
-  fdbdfb
+  you can test it by using different license names , it should show the badge according to what you selected and also the data in the license file should change accordingly.
 
   ## Additional
-  - Github: [fvdfvdfb](https://github.com/fvdfvdfb)
-  - Email: dfbfdbfdb
+  - Github: [rajnidua](https://github.com/rajnidua)
+  - Email: rajni.dua14@gmail.com
 
   
 
 
     ## License
     
-    ![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)
+    ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
   
-    &copy;  2021  hbfdhfdvhjdfv
+    &copy;  2021  RAJNI DUA
     
-    Licensed under [GNU-General-Public](./license)
+    Licensed under [Apache](./license)

@@ -80,7 +80,7 @@ const renderLicenseBadge=(mylicense) => {
       licenseData = "";
       break;
   }
-console.log("the license data obtained is "+licenseData);
+
   
   fs.writeFile('./license', licenseData, (err) =>
     err ? console.error(err) : console.log('Success!')
@@ -90,13 +90,13 @@ console.log("the license data obtained is "+licenseData);
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(mylicense,myName,topData) {
-  console.log("dsvsdvsdvds "+mylicense +myName);
+  
   const todaysDate = new Date()
 const currentYear = todaysDate.getFullYear();
   if(mylicense!== "No Lisence"){
     const licenseData = renderLicenseLink(mylicense);
     const licenseIcon = renderLicenseBadge(mylicense);
-    console.log("The lisence icon value is "+licenseIcon)
+    
     const myLicenseData= `
     ## License
     
@@ -105,7 +105,7 @@ const currentYear = todaysDate.getFullYear();
     &copy;  ${currentYear}  ${myName}
     
     Licensed under [${mylicense}](./license)`;
-  console.log("The data for my lisence is "+myLicenseData);
+  
 return `${topData}`+`${myLicenseData}`;
   }
 else{const myLicenseData= `
@@ -119,7 +119,7 @@ return `${topData}`+`${myLicenseData}`;
 
 // TODO: Create a function to generate markdown for README
 const myGenerateMarkdown=(data) =>{ 
-  console.log("Hi, I am data "+data)
+  
   let mylicense = `${data.license}`;
   var licenseIcon1 = "";
   if(mylicense!=='No Lisence'){
@@ -128,7 +128,7 @@ const myGenerateMarkdown=(data) =>{
   else{
      licenseIcon1 ="";
   }
-  console.log("the value of license icon1 is "+ licenseIcon1); 
+  
   
   
 

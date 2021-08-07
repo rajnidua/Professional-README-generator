@@ -9,9 +9,6 @@ var renderData;
  const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const myGenerateMarkdown = generateMarkdown.myGenerateMarkdown;
-/* const renderLicenseBadge= generateMarkdown.renderLicenseBadge;
-const renderLicenseLink= generateMarkdown.renderLicenseLink;
-const renderLicenseSection= generateMarkdown.renderLicenseSection; */
 
 var myData;
 var myDataLicense;
@@ -94,7 +91,7 @@ const promptUser = () => {
 
 
 const init = () => {
-  console.log("i am inside init");
+  
    promptUser()
    .then((answers)=>myGenerateMarkdown(answers))
    .then((myAnswer) => writeFileAsync('./README.md', myAnswer))
