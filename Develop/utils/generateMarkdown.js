@@ -57,6 +57,8 @@ function renderLicenseSection(mylicense,myName,topData) {
     const licenseIcon = renderLicenseBadge(mylicense);
     console.log("The lisence icon value is "+licenseIcon)
     const myLicenseData= `
+    ## License
+    
     ${licenseIcon}
   
     &copy; ${myName}
@@ -114,7 +116,6 @@ const myGenerateMarkdown=(data) =>{
   ## Testing:
   ${data.testing}
 
-  ## License
 `
 ; 
 return renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`,topData);
