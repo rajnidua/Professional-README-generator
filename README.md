@@ -1,6 +1,4 @@
-## Video LINK
-
-[Professional-README-generator_rajnidua](https://drive.google.com/file/d/10iJfQrTzGjd96f1gPPmtx5NcGEV8oLCI/view?usp=sharing)
+## Professional README Generator
 
 ## User Story
 
@@ -29,5 +27,18 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
+
+## Video LINK
+
+[README-GENERATOR-Rajni](https://drive.google.com/file/d/1gqUl1TfCX-IeCK24U_iVIhjqYQDoWeW6/view?usp=sharing)
+
+## Screenshots
+[Screenshot from video](./Develop/images/README-GENERATOR.png)
+[Screenshot of the file](./Develop/images/Screenshot-README-FILE.png)
+
+## Github link
+https://github.com/rajnidua/Professional-README-generator
+
+
 
 

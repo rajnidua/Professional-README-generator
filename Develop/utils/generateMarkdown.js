@@ -161,8 +161,10 @@ const myGenerateMarkdown=(data) =>{
   ## Table of contents
   - [Description](#Description)
   - [Installation](#Installation)
+  - [Usage](#Usage)
   - [Testing](#Testing)
-  - [Additional Information](#Additional)
+  - [Contributing](#Contributing)
+  - [Questions](#Questions)
   - [License](#License)
 
   ## Description
@@ -174,7 +176,7 @@ const myGenerateMarkdown=(data) =>{
   ## Usage
   ${data.usage}
   
-  ## Testing Instructions
+  ## Testing
   ${data.testing}
 
   ## Contributing
