@@ -1,13 +1,15 @@
 
   
   # Professional-README-generator
-  ![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Table of contents
   - [Description](#Description)
   - [Installation](#Installation)
+  - [Usage](#Usage)
   - [Testing](#Testing)
-  - [Additional Information](#Additional)
+  - [Contributing](#Contributing)
+  - [Questions](#Questions)
   - [License](#License)
 
   ## Description
@@ -19,7 +21,7 @@
   ## Usage
   To use this repository, you need to type ‘node index’ in the terminal, then you need to answer a series of questions that follow. 
   
-  ## Testing Instructions
+  ## Testing
   you can test it by using different license names , it should show the badge according to what you selected and also the data in the license file should change accordingly.
 
   ## Contributing
@@ -32,8 +34,8 @@
 
 ## License
     
-![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
 &copy;  2021  Rajni Dua
     
-*Licensed under [GNU-General-Public](./license)*
+*Licensed under [MIT](./license)*
