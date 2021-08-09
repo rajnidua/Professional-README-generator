@@ -10,7 +10,7 @@ SO THAT I can quickly create a professional README for a new project
 
 ## Acceptance Criteria
 
-```md
+
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -26,15 +26,15 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
-```
+
 
 ## Video LINK
 
 [README-GENERATOR-Rajni](https://drive.google.com/file/d/1gqUl1TfCX-IeCK24U_iVIhjqYQDoWeW6/view?usp=sharing)
 
 ## Screenshots
-<img src="./Develop/images/README-GENERATOR.png"  alt="Screenshot from video"  width="48">
-<img src="./Develop/images/Screenshot-README-FILE.png" alt="Screenshot of the file" width="48">
+<img src="./Develop/images/README-GENERATOR.png"  alt="Screenshot from video"  width="200">
+<img src="./Develop/images/Screenshot-README-FILE.png" alt="Screenshot of the file" width="200">
 
 
 ## Github link
