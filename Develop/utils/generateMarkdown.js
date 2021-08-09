@@ -29,10 +29,15 @@ const renderLicenseBadge=(mylicense) => {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
- const renderLicenseLink=(license) =>{
+ const renderLicenseLink=(license,currentYear,myName) =>{
   switch (license){
     case 'MIT' :
-      licenseData = `Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+      licenseData = `
+      &copy;  ${currentYear}  ${myName}
+    
+      Licensed under ${license}
+      
+      Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
       The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
       
@@ -41,7 +46,12 @@ const renderLicenseBadge=(mylicense) => {
       `;
       break;
     case 'Apache':
-      licenseData= `Licensed under the Apache License, Version 2.0 (the "License");
+      licenseData= `
+      &copy;  ${currentYear}  ${myName}
+    
+      
+      Licensed under ${license}
+      Licensed under the Apache License, Version 2.0 (the "License");
       you may not use this file except in compliance with the License.
       You may obtain a copy of the License at
    
@@ -54,7 +64,12 @@ const renderLicenseBadge=(mylicense) => {
       limitations under the License.`;
       break;
     case 'GNU-General-Public':
-      licenseData =  `This program is free software: you can redistribute it and/or modify
+      licenseData =  `
+      &copy;  ${currentYear}  ${myName}
+    
+      Licensed under ${license}
+
+      This program is free software: you can redistribute it and/or modify
       it under the terms of the GNU General Public License as published by
       the Free Software Foundation, either version 3 of the License, or
       (at your option) any later version.
@@ -68,7 +83,12 @@ const renderLicenseBadge=(mylicense) => {
       along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
       break;
     case 'BSD 2-Clause License':
-      licenseData = `Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+      licenseData = `
+      &copy;  ${currentYear}  ${myName}
+    
+      Licensed under ${license}
+      
+      Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
       1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
       
@@ -94,17 +114,18 @@ function renderLicenseSection(mylicense,myName,topData) {
   const todaysDate = new Date()
 const currentYear = todaysDate.getFullYear();
   if(mylicense!== "No Lisence"){
-    const licenseData = renderLicenseLink(mylicense);
+    const licenseData = renderLicenseLink(mylicense,currentYear,myName);
     const licenseIcon = renderLicenseBadge(mylicense);
     
-    const myLicenseData= `
-    ## License
+    const myLicenseData= 
+`
+## License
     
-    ${licenseIcon}
+${licenseIcon}
   
-    &copy;  ${currentYear}  ${myName}
+&copy;  ${currentYear}  ${myName}
     
-    Licensed under [${mylicense}](./license)`;
+*Licensed under [${mylicense}](./license)*`;
   
 return `${topData}`+`${myLicenseData}`;
   }
@@ -133,8 +154,9 @@ const myGenerateMarkdown=(data) =>{
   
 
   const topData = `
+  
+  # ${data.title}
   ${licenseIcon1}
-  # &mdash; ${data.title}
 
   ## Table of contents
   - [Description](#Description)
@@ -149,15 +171,19 @@ const myGenerateMarkdown=(data) =>{
   ## Installation
   ${data.installation}
 
-  ## Testing
+  ## Usage
+  ${data.usage}
+  
+  ## Testing Instructions
   ${data.testing}
 
-  ## Additional
+  ## Contributing
+  ${data.contributing}
+
+  ## Questions
+  For any further questions, reachout to me at :
   - Github: [${data.github}](https://github.com/${data.github})
   - Email: ${data.email}
-
-  
-
 `
 ; 
 return renderLicense = renderLicenseSection(`${data.license}`,`${data.name}`,topData);

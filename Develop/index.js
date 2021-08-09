@@ -51,6 +51,10 @@ const promptUser = () => {
         type: 'input',
         name: 'usage',
         message: 'usage instructions of your repository',
+      },{
+        type: 'input',
+        name: 'contributing',
+        message: 'please mention the contributing instructions for your repository',
       },
       {
         type: 'list',
