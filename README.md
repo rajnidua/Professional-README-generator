@@ -33,8 +33,8 @@ THEN I am taken to the corresponding section of the README
 [README-GENERATOR-Rajni](https://drive.google.com/file/d/1gqUl1TfCX-IeCK24U_iVIhjqYQDoWeW6/view?usp=sharing)
 
 ## Screenshots
-<img src="./Develop/images/README-GENERATOR.png"  alt="Screenshot from video"  width="200">
-<img src="./Develop/images/Screenshot-README-FILE.png" alt="Screenshot of the file" width="200">
+<img src="./Develop/images/README-GENERATOR.png"  alt="Screenshot from video"  width="400" height ="300">
+<img src="./Develop/images/Screenshot-README-FILE.png" alt="Screenshot of the file" width="400" height ="400">
 
 
 ## Github link
