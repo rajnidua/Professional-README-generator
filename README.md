@@ -30,7 +30,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Video LINK
 
-[README-GENERATOR-Rajni](https://drive.google.com/file/d/1gqUl1TfCX-IeCK24U_iVIhjqYQDoWeW6/view?usp=sharing)
+[README-GENERATOR-Rajni](https://drive.google.com/file/d/1NBTwNWW0L6P7G7OmamEDHi_xK9N3RozK/view?usp=sharing)
 
 ## Screenshots
 <img src="./Develop/images/README-GENERATOR.png"  alt="Screenshot from video"  width="400" height ="300">
